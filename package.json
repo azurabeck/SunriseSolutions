@@ -1,0 +1,41 @@
+{
+  "name": "Sunrise",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "nodemailer": "^6.4.2",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-html-email": "^3.0.0",
+    "react-redux-firebase": "^2.2.4",
+    "react-render-html": "^0.6.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.1",
+    "redux-firestore": "^0.6.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "firebase": "^6.3.5",
+    "gh-pages": "^1.1.0",
+    "node-sass": "^4.8.3",
+    "react-app-rewire-sass-modules": "^1.1.5",
+    "react-app-rewired": "^1.5.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-redux": "^7.1.0",
+    "sass-loader": "^6.0.7"
+  }
+}

@@ -1,0 +1,185 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+.app {
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    height: 80px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+
+    background: #006C6A;
+
+    .nav-container {
+        display: inline-flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+
+        img { margin-left: 80px; }
+
+        .web-menu {
+            display: inline-flex;
+            padding: 0;
+            list-style: none;
+            width: 100%;
+            margin-right: 80px;
+            justify-content: flex-end;
+            margin-bottom: 0;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 15px;
+                margin-left: 10px;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 400;
+                text-transform: lowercase;
+                color: white;
+             }
+        }
+
+        .bars {
+            display: none;
+            padding: 0;
+            margin-right: 20px;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            z-index: 2;
+            right: 0;
+            left: 0;
+            bottom: -15px;
+            top: 0px;
+            background-color: #ffffffd4;
+
+            ul {
+                text-decoration: none;
+                list-style: none;
+                padding: 0;
+                position: fixed;                
+                background-color: white;
+                z-index: 2;
+                right: 100px;
+                left: 0;
+                bottom: -16px;
+                top: -16px;
+                box-shadow: 1px 6px 10px 2px #797878;
+
+                li.logo {
+                    width: 100%;
+                    height: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 0;   
+                    margin-top: 15px;
+                    margin-bottom: 20px;
+                    
+                    background-color: #006C6A;
+                }
+                
+                li { 
+                    width: 95%;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 25px;
+                }
+                a {
+                    color: #5a5a5a;
+                    text-decoration: none;
+                    font-weight: 400;
+                }
+
+                li:hover {
+                    cursor: pointer !important;
+                    color: #006C6A;
+                }
+            }
+
+            .arrow-container {
+                position: fixed;
+                z-index: 3;
+                left: 0;
+                right: 100px;
+                height: 50px;
+                bottom: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                .arrow {
+                    width: 10px !important;
+                    margin-right: 15px;
+                    opacity: 0.8;
+                }
+            }
+
+                        
+
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        
+        .nav-container {
+            img { width: 135px; margin-left: 20px; }
+            .web-menu {
+                display: none;
+            }
+            .bars {
+                display: inline-flex;
+                float: right;
+                justify-content: flex-end;
+                width: 100%;
+                img { width: 20px; }
+            }   
+        }
+     }
+}
+
+.content {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+    z-index: 1;
+
+    .container-default { 
+        display: flex;
+        justify-content: center;
+        margin: 0 150px;
+    }
+}
+
+@media only screen and (max-width: 768px)  {
+
+    .content {
+        .container-default { 
+            display: flex;
+            justify-content: center;
+            margin: 0 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .navbar {
+        img { margin-left: 150px !important; }
+        ul { margin-right: 150px !important; }
+    }
+}

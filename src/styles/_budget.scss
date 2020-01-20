@@ -1,0 +1,112 @@
+.budget {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) -33.68%, #33475F 100%), #006C6A;
+   
+    .container-default {
+        display: block;
+
+        .title {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 44px;
+            color: #F1C30B;
+            margin-top: 100px;
+            margin-bottom: 40px;
+
+        }
+
+        form {
+
+            text-align: end;
+
+            input { 
+                width: 560px; 
+                height: 50px;
+                padding-left: 10px;
+                margin-bottom: 20px;
+                border: none;
+                background: rgba(255, 255, 255, 0.95);}
+            input::placeholder {
+                color: #A2A2A2;
+            }
+
+            select.media {
+                width: 560px; 
+                height: 50px;
+                padding-left: 10px;
+                margin-bottom: 20px;
+                border: none;
+                background: rgba(255, 255, 255, 0.95);
+                display: flex;
+                color: #A2A2A2;
+                float: right;    
+                align-items: center;           
+            }
+
+            .btn-area {
+                margin-top: 165px;
+
+                display: flex;
+                justify-content: flex-end;
+                .yellow-btn {
+                    border: none;
+                    border-radius: 1px;
+                    width: 560px;
+                    height: 55px;
+                    margin-right: 0;
+                }
+            }
+
+        }
+
+        .network {          
+            
+            padding: 0 40px;
+
+            .desc {
+                width: 570px;
+                font-weight: 500;
+                font-size: 26px;
+                margin-bottom: 20px;
+                color: #D2D2D2;
+            }
+
+            .social-network {
+                display: inline-flex;
+                padding: 0;
+                list-style: none;
+                width: 570px;
+                position: absolute;
+                bottom: 0;
+                align-items: center;
+                margin-bottom: 0;
+                a {                    
+                    width: 25%;
+                    li {
+                        margin-right: 30px;
+                        img { width: 50px; }
+                    }
+                }
+                
+            }
+        }
+
+      
+    }   
+}
+    
+.call-area {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 25px;
+        margin-right: 10px;
+    }
+}
