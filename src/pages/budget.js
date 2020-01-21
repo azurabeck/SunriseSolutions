@@ -22,9 +22,10 @@ class budget extends Component {
         }
 
         this.handlePopup = this.handlePopup.bind(this)
-        this.handleChange = this.handleChange.bind(this)
         this.handlePopupBud = this.handlePopupBud.bind(this)
-        this.closeBud = this.closeBudgit.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleChange = this.handleChange.bind(this)
+        this.closeBud = this.closeBud.bind(this)
     }
 
     handleChange(e) {
@@ -44,6 +45,10 @@ class budget extends Component {
 
     handlePopupBud() {
         this.setState({popupBud: !this.state.popupBud})
+    }
+
+    handleSubmit(event){
+        event.preventDefault();
     }
 
     // handleSubmit = ( event ) => {
@@ -98,7 +103,7 @@ class budget extends Component {
             <div className='popup-container'>
                 <div className='btn-close' onClick={this.closeBud}>x</div>
                 <div className='title'>Ferramenta em manutenção!</div>
-                <div className='desc'>Entre em contato a qualquer momento conosco e faça seus orçamento direto conosco!</div>
+                <div className='desc'>Entre em contato a qualquer momento e faça seu orçamento!</div>
                 <a href='tel:+552197580-3541' className='tel call-area'>
                     <img src={tele} alt=''/>+55 21 97580-3541
                 </a>
@@ -116,7 +121,7 @@ class budget extends Component {
                         <Row>
 
                             <Col md={6} sm={12}>
-                                <form method="post" method="POST">
+                                <form method="post"  onSubmit={this.handleSubmit} method="POST">
                                     <input id='name' placeholder='Name' onChange={this.handleChange}></input>
                                     <input id='email' type='email' placeholder='Email' onChange={this.handleChange}></input>
                                     <input id='mobile' type='telefone' placeholder='Celular' onChange={this.handleChange}></input>
