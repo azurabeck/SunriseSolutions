@@ -92,8 +92,8 @@ class budget extends Component {
                     <div className='btn-close' onClick={this.handlePopup}>x</div>
                     <div className='title'>Nosso Telefone.</div>
                     <div className='desc'>Entre em contato a qualquer momento conosco e faça seus orçamento direto conosco!</div>
-                    <a href='tel:+552197580-3541' className='tel call-area'>
-                        <img src={tele} alt=''/>+55 21 97580-3541
+                    <a href='tel:+552121 988681862' className='tel call-area'>
+                        <img src={tele} alt=''/>+55 21 21 98868-1862
                     </a>
                     
                 </div>
@@ -104,8 +104,8 @@ class budget extends Component {
                 <div className='btn-close' onClick={this.closeBud}>x</div>
                 <div className='title'>Ferramenta em manutenção!</div>
                 <div className='desc'>Entre em contato a qualquer momento e faça seu orçamento!</div>
-                <a href='tel:+552197580-3541' className='tel call-area'>
-                    <img src={tele} alt=''/>+55 21 97580-3541
+                <a href='tel:+552121 988681862' className='tel call-area'>
+                    <img src={tele} alt=''/>+55 21 21 98868-1862
                 </a>
                 
             </div>
@@ -151,7 +151,7 @@ class budget extends Component {
                                     <a href='https://www.facebook.com/sunrisesolutionsbr/'  rel="noopener noreferrer" target='_blank'><li><img src={face} alt=''/></li></a>
                                     <a href='https://www.instagram.com/sunrisesolutionsbr/'  rel="noopener noreferrer" target='_blank' ><li><img src={insta} alt=''/></li></a>
                                     <a href='#' onClick={this.handlePopup}><li><img src={tele} alt=''/></li></a>
-                                    <a href="https://wa.me/5521975803541"  rel="noopener noreferrer" target="_blank"> <li><img src={whats} alt=''/></li> </a>
+                                    <a href="https://wa.me/5521988681862"  rel="noopener noreferrer" target="_blank"> <li><img src={whats} alt=''/></li> </a>
                                 </ul>
 
                             </Col>

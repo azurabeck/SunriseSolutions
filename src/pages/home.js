@@ -57,8 +57,8 @@ class home extends Component {
                     <div className='btn-close' onClick={this.handlePopup}>x</div>
                     <div className='title'>Nosso Telefone.</div>
                     <div className='desc'>Entre em contato a qualquer momento conosco e faça seus orçamento direto conosco!</div>
-                    <a href='tel:+552197580-3541' className='tel call-area'>
-                        <img src={tele} alt=''/>+55 21 97580-3541
+                    <a href='tel:+552198868-1862' className='tel call-area'>
+                        <img src={tele} alt=''/>+55 21 98868-1862
                     </a>
                     
                 </div>
