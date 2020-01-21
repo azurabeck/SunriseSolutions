@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap'
-import { renderEmail } from 'react-html-email'
-import axios from 'axios';
+// import { renderEmail } from 'react-html-email'
+// import axios from 'axios';
 
 import face from '../styles/images/icons/face.svg'
 import insta from '../styles/images/icons/insta.svg'
@@ -46,32 +46,32 @@ class budget extends Component {
         this.setState({popupBud: !this.state.popupBud})
     }
 
-    handleSubmit = ( event ) => {
+    // handleSubmit = ( event ) => {
         
-        event.preventDefault();
+    //     event.preventDefault();
 
 
-        const messageHtml =  renderEmail(
-            <div> {this.state.name} {this.state.email} {this.state.mobile} {this.state.media}</div>
-        );
+    //     const messageHtml =  renderEmail(
+    //         <div> {this.state.name} {this.state.email} {this.state.mobile} {this.state.media}</div>
+    //     );
 
-        axios({
-            method: "POST", 
-            url:"http://localhost:3002/send", 
-            data: {
-            name: this.state.name,
-            email: this.state.email,
-            messageHtml: messageHtml
-                }
-            }).then((response)=>{
-                if (response.data.msg === 'success'){
-                    alert("Email sent, awesome!"); 
-                    this.resetForm()
-                }else if(response.data.msg === 'fail'){
-                    alert("Oops, something went wrong. Try again")
-                }
-        })
-    }
+    //     axios({
+    //         method: "POST", 
+    //         url:"http://localhost:3002/send", 
+    //         data: {
+    //         name: this.state.name,
+    //         email: this.state.email,
+    //         messageHtml: messageHtml
+    //             }
+    //         }).then((response)=>{
+    //             if (response.data.msg === 'success'){
+    //                 alert("Email sent, awesome!"); 
+    //                 this.resetForm()
+    //             }else if(response.data.msg === 'fail'){
+    //                 alert("Oops, something went wrong. Try again")
+    //             }
+    //     })
+    // }
 
     resetForm(){
         this.setState({name: '', email: '', mobile: '', media: ''});
@@ -116,7 +116,7 @@ class budget extends Component {
                         <Row>
 
                             <Col md={6} sm={12}>
-                                <form method="post" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                                <form method="post" method="POST">
                                     <input id='name' placeholder='Name' onChange={this.handleChange}></input>
                                     <input id='email' type='email' placeholder='Email' onChange={this.handleChange}></input>
                                     <input id='mobile' type='telefone' placeholder='Celular' onChange={this.handleChange}></input>
