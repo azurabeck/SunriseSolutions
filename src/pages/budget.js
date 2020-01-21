@@ -24,7 +24,7 @@ class budget extends Component {
         this.handlePopup = this.handlePopup.bind(this)
         this.handleChange = this.handleChange.bind(this)
         this.handlePopupBud = this.handlePopupBud.bind(this)
-        this.closeBud = this.closeBud.bind(this)
+        this.closeBud = this.closeBudgit.bind(this)
     }
 
     handleChange(e) {
